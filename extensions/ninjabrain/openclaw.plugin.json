@@ -1,0 +1,21 @@
+{
+  "id": "ninjabrain",
+  "kind": "memory",
+  "displayName": "NinjaBrain",
+  "description": "Structured knowledge engine with compiled truth, timelines, and FTS5 search. Entity types: person, company, concept, project, tool.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "dbPath": {
+        "type": "string",
+        "description": "Path to the NinjaBrain SQLite database file"
+      },
+      "autoInject": {
+        "type": "boolean",
+        "default": true,
+        "description": "Automatically search brain and inject context before each agent turn"
+      }
+    }
+  }
+}
